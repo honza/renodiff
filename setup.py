@@ -6,9 +6,6 @@ from setuptools import setup
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
 requirements = [
     'Click>=6.0',
     # TODO: put package requirements here
@@ -21,8 +18,8 @@ test_requirements = [
 setup(
     name='renodiff',
     version='0.1.0',
-    description="Python Boilerplate contains all the boilerplate you need to create a Python package.",
-    long_description=readme + '\n\n' + history,
+    description="Convert git patches to reno release notes",
+    long_description=readme,
     author="Honza Pokorny",
     author_email='me@honza.ca',
     url='https://github.com/honza/renodiff',
