@@ -19,6 +19,10 @@ renodiff
 
 
 renodiff is a tool for converting a git commit diff to a `reno`_ release note.
+It scans the commit message for Openstack-specific strings, like ``Closes-Bug``
+or ``Implements``, finds the relevant bug numbers and links, and formats
+everything for ingestion by reno.  You should still expand the release note by
+hand to provide more context but renodiff can remove a lot of the grunt work.
 
 .. _reno: https://docs.openstack.org/developer/reno/ 
 
